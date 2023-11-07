@@ -1,0 +1,109 @@
+/* Your CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.admin-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9; 
+    color: #fff; 
+    text-decoration: none; /* Remove underlines from the link */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.admin-link:hover {
+    background-color: #0056B3; 
+}
+
+.containerIndex {
+    background-color: #fff;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    background-color: #fff;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the error messages */
+.error {
+    color: #f00;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+button {
+    width: 50%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .container, .containerIndex {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Grid View Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.grid-item:hover {
+    background-color: #e0e0e0;
+}

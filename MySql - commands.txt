@@ -1,0 +1,38 @@
+IF YOU USING Ubuntu server:
+-sudo apt install mysql-server
+-sudo mysql_secure_installation (This will allow you to set some security options, such as removing anonymous users, disallowing remote root login, and removing the test database. You can choose the recommended settings or customize them as needed.)
+-service mysql status
+-sudo mysql -u root -p (You'll be prompted to enter the password you set during installation.)
+-CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+-CREATE DATABASE database_name;
+-GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
+-FLUSH PRIVILEGES;
+------------------------------------------------------------------------------------------------------------
+IF YOU USING XAMPP: cd C:\xampp\mysql\bin
+------------------------------------------------------------------------------------------------------------
+
+Log in: (ONE TIME TO CRAETE admin ACCOUNT)
+
+mysql -u root -p
+CREATE DATABASE bokningssystem;
+CREATE USER 'admin'@'localhost' IDENTIFIED BY '1234';
+GRANT ALL PRIVILEGES ON bokningssystem.* TO 'admin'@'localhost';
+FLUSH PRIVILEGES;
+exit;
+----------------------------------------------------------------------
+Log in: (START TO USE admin)
+
+mysql -u admin -p
+1234
+USE bokningssystem;
+
+------------------------------------------------------------------------------------------------------------
+List all tables in the selected database:
+SHOW TABLES;
+
+------------------------------------------------------------------------------------------------------------
+To see the data inside a table in MariaDB (or MySQL):
+SELECT * FROM users;
+------------------------------------------------------------------------------------------------------------
+
+exit;
